@@ -70,7 +70,7 @@ export class RadioComponent implements OnInit {
     }
   ];
 
-  responsiveOptions;
+  responsiveOptions: any[];
 
   constructor(
     private StationService: StationsService

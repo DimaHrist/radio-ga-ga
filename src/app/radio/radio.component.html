@@ -27,11 +27,8 @@
   </div>
 </div>
 <div class="carousel">
-  <p-carousel [value]="cars" [numVisible]="4" [numScroll]="3" [circular]="false"
+  <p-carousel [value]="cars" [numVisible]="4" [numScroll]="3" [circular]="true"
     [responsiveOptions]="responsiveOptions">
-    <p-header>
-      <h3>Basic</h3>
-    </p-header>
     <ng-template let-car pTemplate="item">
       <div class="car-details">
         <div class="p-grid p-nogutter">
@@ -41,12 +38,6 @@
           <div class="p-col-12 car-data">
             <div class="car-title">{{car.brand}}</div>
             <div class="car-subtitle">{{car.year}} | {{car.color}}</div>
-
-            <div class="car-buttons">
-              <button pButton type="button" class="ui-button-secondary" icon="pi pi-search"></button>
-              <button pButton type="button" class="ui-button-secondary" icon="pi pi-star"></button>
-              <button pButton type="button" class="ui-button-secondary" icon="pi pi-cog"></button>
-            </div>
           </div>
         </div>
       </div>
